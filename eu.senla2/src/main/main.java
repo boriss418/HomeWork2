@@ -24,10 +24,11 @@ public class main {
 			   
 			   default:
 				   if ((one >= 0 && one <7 ) && (ten >=0 && ten <7)) {
-					   System.out.println(rainbow1.getColour()[one] + "-" + rainbow1.getColour()[ten]);
+					   System.out.print(rainbow1.getColour2()[one]);
+					   System.out.println("-" + rainbow1.getColour()[ten]);
 				   }else
 				   
-			    	System.out.println("nevernoe chislo");
+			    	System.out.println("probably number");
 			}
 			
 			
