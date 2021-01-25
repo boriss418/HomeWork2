@@ -7,15 +7,10 @@ public class cat {
 		
 	public String name = "Bars";
 	public int age = 3;
-	
-	public void Cat1(String x, int a){
-	      name = x;
-	      age = a;
-	 } 
+		  
 	int counter =0;
 	
 	
-
 	public int getAge() {
 		return age;
 	}
@@ -51,15 +46,19 @@ public class cat {
 			
 		}	
 	}
+	public cat() {}
+	public  cat(String name ,int age){
+		this.name= name;
+		this.age =age;
+	}
 	public void CatDoWhile () {
-		name ="puh";
-		age = 7;
-				
+						
 		counter=0;
 				
 		do {
 			counter++;			
-			System.out.println("Cat : " + "name" + name + "age " + age);
+			System.out.println (name + age) ;  
+			
 		}while (counter < 10);
 	}
 	
@@ -68,14 +67,14 @@ public class cat {
 	int[] arrays = new int[] {1,3,7,5,6};	
 	int index = 0;
 	
-	String[] array = new String[5];
+	String[] array = new String[] {};
 	Iterable<String> list =Arrays.asList("Myrka","Bars","Ruzh","Vas'ka","Pyh");
 	
 	
 	for (String i: list) {
 		System.out.print(i + ": ");
 		System.out.println(arrays[index]);
-		System.out.println(list.equals(arrays[index]));
+		//System.out.println(list.equals(arrays[index]));
 		index++;
 		
 	}
