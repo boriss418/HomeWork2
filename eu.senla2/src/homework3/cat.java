@@ -5,11 +5,10 @@ import java.util.Arrays;
 public class cat {
 	
 		
-	public String name = "Bars";
-	public int age = 3;
+	public static String name = "Bars";
+	public static int age = 3;
 		  
-	int counter =0;
-	
+	int counter =0;	
 	
 	public int getAge() {
 		return age;
@@ -47,20 +46,20 @@ public class cat {
 		}	
 	}
 	public cat() {}
-	public  cat(String name ,int age){
-		this.name= name;
-		this.age =age;
+	public  cat (String name ,int age){
 	}
-	public void CatDoWhile () {
-						
-		counter=0;
-				
-		do {
-			counter++;			
-			System.out.println (name + age) ;  
+		public void CatDoWhile () {
 			
-		}while (counter < 10);
-	}
+			name= "Leo";
+			age =8;
+		counter=0;
+			
+			do {
+				counter++;			
+				System.out.print (cat.name) ;  
+				System.out.println (cat.age) ; 
+			}while (counter < 10);
+		}
 	
 	public void CatForeach () {
 		
@@ -74,7 +73,7 @@ public class cat {
 	for (String i: list) {
 		System.out.print(i + ": ");
 		System.out.println(arrays[index]);
-		//System.out.println(list.equals(arrays[index]));
+	    System.out.println(list.equals(arrays[index]));
 		index++;
 		
 	}
