@@ -81,9 +81,6 @@ public class cat {
 	}
 	
 
-	//String toString() {
-	//	return "Cat:" + " Name - " + name + "Age - "+age
-	//}
-	
+
 }
 }		

@@ -9,6 +9,6 @@ public class main {
 		cat1.CatFor ();
 		cat1.CatDoWhile();
 		cat1.CatForeach();
-		 System.out.println(cat1.toString());
+		
 	}
 }
