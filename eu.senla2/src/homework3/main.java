@@ -38,12 +38,14 @@ public class main {
 		  */
 				counter=0;
 				
+				
 				for (String i: cat1.names) {
-					System.out.println(i + ": ");
-					//System.out.println(cat1.ages[counter]);
+					System.out.println(i + ": " + cat1.ages[counter]);
+					counter++;
 				}
 				System.out.println(cat1.names[2].equals(cat1.names[3]));
-	
+				System.out.println(cat1.toString());
+				System.out.println(cat1);
 	}
 	
 }	

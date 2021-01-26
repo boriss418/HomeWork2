@@ -38,15 +38,20 @@ public class cat {
 	}
 	
 		
-	int[] ages = new int[] {1,3,7,5,6};	
+	final int[] ages = new int[] {1,3,7,5,6};	
 	
-	String[] names = new String[] {"Myrka - 2","Bars - 4","Ruzh - 8","Vas'ka - 2","Pyh  - 5"};
+	final String[] names = new String[] {"Myrka ","Bars ","Ruzh ","Vas'ka ","Pyh  "};
 	
+
 	
 	public  cat (String [] n ,int []a){
-		names=n;
-		ages=a;
+		n = names;
+		a = ages;
 		}
+	
+	public String toString () {
+		return name+ "," +age;
+	}
 }
 	
 	
