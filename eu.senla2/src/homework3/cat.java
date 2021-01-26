@@ -5,11 +5,13 @@ import java.util.Arrays;
 public class cat {
 	
 		
-	public static String name = "Bars";
-	public static int age = 3;
+	public  String name = "Bars";
+	public  int age = 3;
 		  
 	int counter =0;	
 	
+	
+
 	public int getAge() {
 		return age;
 	}
@@ -28,57 +30,25 @@ public class cat {
 	
 	
 	
-	public void CatWhile () {
-		
-		while (counter < 10) {
-			counter++;
-			System.out.println("Cat : " + name + ", " + age );
-		}
-	}
 	
-	
-	public void CatFor () {
-		for (counter =0; counter < 10; counter++) {
-			setName("Vas'ka");
-			setAge(10);
-			System.out.println("Cat : " + getName() + ", " + getAge() );
-			
-		}	
-	}
 	public cat() {}
 	public  cat (String name ,int age){
+		setName ("Leo");
+		setAge (8);
 	}
-		public void CatDoWhile () {
-			
-			name= "Leo";
-			age =8;
-		counter=0;
-			
-			do {
-				counter++;			
-				System.out.print (cat.name) ;  
-				System.out.println (cat.age) ; 
-			}while (counter < 10);
+	
+		
+	int[] ages = new int[] {1,3,7,5,6};	
+	
+	String[] names = new String[] {"Myrka - 2","Bars - 4","Ruzh - 8","Vas'ka - 2","Pyh  - 5"};
+	
+	
+	public  cat (String [] n ,int []a){
+		names=n;
+		ages=a;
 		}
-	
-	public void CatForeach () {
-		
-	int[] arrays = new int[] {1,3,7,5,6};	
-	int index = 0;
-	
-	String[] array = new String[] {};
-	Iterable<String> list =Arrays.asList("Myrka","Bars","Ruzh","Vas'ka","Pyh");
-	
-	
-	for (String i: list) {
-		System.out.print(i + ": ");
-		System.out.println(arrays[index]);
-	    System.out.println(list.equals(arrays[index]));
-		index++;
-		
-	}
-	
-
-
 }
-}		
+	
+	
+	
+	
