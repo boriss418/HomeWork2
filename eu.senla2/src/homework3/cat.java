@@ -31,11 +31,10 @@ public class cat {
 	
 	
 	
-	public cat() {}
-	public  cat (String name ,int age){
-		setName ("Leo");
-		setAge (8);
-	}
+	//public  cat (String name ,int age){
+	//	setName ("Leo");
+	//	setAge (8);
+	//}
 	
 		
 	final int[] ages = new int[] {1,3,7,5,6};	
@@ -44,9 +43,10 @@ public class cat {
 	
 
 	
-	public  cat (String [] n ,int []a){
-		n = names;
-		a = ages;
+	public cat() {}
+	public  cat (String s[] ,int i[]){
+		s = names;
+		i = ages;
 		}
 	
 	public String toString () {
