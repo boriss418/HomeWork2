@@ -74,18 +74,24 @@ public class main {
 					}				
 					}
 					int index =0;
+					int o =0;
 					StringBuffer sb = new StringBuffer();
-					double [] numbers = new double[20];
+					double [] numbers = new double[10];
+					double [] num = new double[o];
 															
 					for (int i =0; i < summdiagonal.length; i++) {	
 					try {
 					Double.parseDouble(summdiagonal[i]);					
 					if (Double.parseDouble(summdiagonal[i])>= 1.7) {
-						numbers [index] = Math.ceil(Double.parseDouble(summdiagonal[i]));
+						numbers [o] = Math.ceil(Double.parseDouble(summdiagonal[i]));
+						num  = Arrays.copyOf(numbers, o+1);
 						index++;
+						o++;
 					}else {
-						numbers [index] = Math.floor(Double.parseDouble(summdiagonal[i]));
+						numbers [o] = Math.floor(Double.parseDouble(summdiagonal[i]));
+						num  = Arrays.copyOf(numbers, o+1);
 						index++;
+						o++;
 					}
 					}catch (NumberFormatException e) {
 						sb.append(summdiagonal[i].substring(2,4) + " ");						
@@ -96,8 +102,8 @@ public class main {
 					
 					System.out.println(sb);
 					
-					for (int i = 0; i< numbers.length; i++ ) {
-						System.out.print( numbers [i]+" ");
+					for (int i = 0; i< num.length; i++ ) {
+						System.out.print( num [i]+" ");
 						}
 	}
 }
