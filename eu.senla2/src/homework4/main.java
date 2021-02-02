@@ -8,6 +8,9 @@ import java.util.Random;
 public class main {
 	public static void main(String[] args) {
 	
+		/*
+		 * создаем массив и заполняем его 
+		 */
 		String[][] mass = new String[10][10];
 		
 		final String [] letters = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
@@ -30,6 +33,9 @@ public class main {
 				}
 				    System.out.println() ;
 				}
+				/*
+				 * создаем массивы деогоналей предыдущего массива
+				 */
 				String [] diagonal1 = new String [10];
 				String [] diagonal2 = new String [10];
 				for (int i = 0; i < mass.length; i++) {
@@ -59,6 +65,9 @@ public class main {
 					System.out.println();
 					System.out.println(diagonal1.equals(diagonal2));
 					
+					/*
+					 * выбираем из массива деогоналей буквенные выражения
+					 */
 					
 					String [] summdiagonal = new String [20];
 					
@@ -76,6 +85,10 @@ public class main {
 					int index =0;
 					int o =0;
 					StringBuffer sb = new StringBuffer();
+					
+					/*
+					 * ыбираем числовые выражения
+					 */
 					double [] numbers = new double[10];
 					double [] num = new double[o];
 															
@@ -94,16 +107,15 @@ public class main {
 						o++;
 					}
 					}catch (NumberFormatException e) {
-						sb.append(summdiagonal[i].substring(2,4) + " ");						
-											
-					}		
-										
+						sb.append(summdiagonal[i].substring(2,4) + " ");													
+					}											
 					}
 					
 					System.out.println(sb);
 					
-					for (int i = 0; i< num.length; i++ ) {
-						System.out.print( num [i]+" ");
+					System.out.print( num [0]+);
+					for (int i = 1; i< num.length; i++ ) {
+						System.out.print("_"+ num [i]);
 						}
 	}
 }
