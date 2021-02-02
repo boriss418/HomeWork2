@@ -113,7 +113,7 @@ public class main {
 					
 					System.out.println(sb);
 					
-					System.out.print( num [0]+);
+					System.out.print( num [0]);
 					for (int i = 1; i< num.length; i++ ) {
 						System.out.print("_"+ num [i]);
 						}

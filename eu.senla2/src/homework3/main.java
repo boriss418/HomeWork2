@@ -4,23 +4,23 @@ public class main {
 
 	public static void main(String[] args) {
 		
-		cat cat1 = new cat("Bars", 5);	
-	
-		int counter =0;	
+		
 	/*
 	 * 	цикл while
 	 */
+		int counter =0;	
 		while (counter < 10) {
 			counter++;
-			System.out.println("Cat : " +cat1.name + cat1.age  );
+			System.out.println(new cat().toString()  );
 		}
 		/*
 		 * 	цикл for
 		 */
 		for (counter =0; counter < 10; counter++) {
-			cat1.setName("Vas'ka");
-			cat1.setAge(10);
-			System.out.println("Cat : " + cat1.getName() + ", " + cat1.getAge() );
+			cat Cat = new cat();
+			Cat.setName("Vas'ka");
+			Cat.setAge(10);
+			System.out.println("Cat : " + Cat );
 			
 		}	
 		/*
@@ -30,22 +30,21 @@ public class main {
 		counter=0;				
 				do {
 					counter++;			
-					System.out.print (cat1.name) ;  
-					System.out.println (cat1.age) ; 
+					System.out.println (new cat().toString()) ;  					
 				}while (counter < 10);
 		 /*
 		  * 	цикл foreach
 		  */
 				counter=0;
 				
-				
-				for (String i: cat1.names) {
-					System.out.println(i + ": " + cat1.ages[counter]);
+				cat Cat = new cat();
+				for (String i: Cat.names) {
+					System.out.println(i + ": " + Cat.ages[counter]);
 					counter++;
 				}
-				System.out.println(cat1.names[2].equals(cat1.names[3]));
-				System.out.println(cat1.toString());
-				System.out.println(cat1);
+				System.out.println(Cat.names[2].equals(Cat.names[3]));
+	
+	
 	}
 	
 }	
